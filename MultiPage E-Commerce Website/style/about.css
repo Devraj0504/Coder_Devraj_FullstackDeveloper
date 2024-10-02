@@ -1,0 +1,27 @@
+
+section{
+    position: relative;
+    top: 20vh;
+}.imgae{
+    width: 100%;
+}
+.imgae img{
+    width: 100%;
+}
+.ab{
+    /* color: rosybrown; */
+    width: 100%;
+    background: transparent;
+    position: relative;
+    padding: 1%;
+    justify-content: space-between;
+    text-align: center;
+}
+.ab h1{
+    padding: 2%;
+    color: rgb(247, 4, 4);
+    font-size: 30px;
+}
+.ab p{
+    padding: 0% 20%;
+}

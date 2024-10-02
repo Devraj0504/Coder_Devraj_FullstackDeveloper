@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>classy Shoes</title>
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/mediaqu.css">
+    <link rel="icon" href="/assests/favicon.jpg">
+    <script src="https://kit.fontawesome.com/19996fca95.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- HEADER START -->
+<header>
+    <!-- FIRST NAVE START -->
+    <nav class="first-nav">
+        <div class="logo">
+            <img src="/assests/Whiltor.png" alt="">
+        </div>
+            <div class="searchbar">
+                <form action="">
+                    <input type="search" placeholder="search here"> 
+                    <a href=""><i class="fa-solid fa-magnifying-glass"></i> </a>
+                </form>
+            </div>
+        <div class="menu" id="menu">
+            <a href="index.html">home</a>
+            <a href="about.html">About</a>
+            <select name="links" id="" class="sel" onchange="window.location.href=this.value;">
+                <option value="">Products</option>
+                <option value="/html/men.html">MEN</option>
+                <option value="/html/women.html">WOMEN</option>
+                <option value="/html/kids.html">KIDS</option>
+                <option value="/html/collection.html">COLLECTIONS</option>
+            </select>
+            <a class="get-started" href="login.html">Login/sign up</a>
+        </div>
+        <div class="bar" >
+            <i class="fa-solid fa-bars" id="bar" onclick="open_menu()"></i>
+            <i class="fa-solid fa-xmark" class="barx" id="barx" onclick="close_menu()"></i>
+        </div>
+    </nav>
+    <!-- SECOND NAV START -->
+    <nav class="second-nav">
+        <a href="men.html">MEN</a>
+        <a href="women.html">WOMEN</a>
+        <a href="kids.html">KIDS</a>
+        <a href="collection.html">COLLECTIONS</a>
+        <a href="index.html">SALE</a>
+        <a href="index.html">SLIPPERS & SANDALS</a>
+        <a href="collection.html">EXCLUSIVE</a>
+    </nav>
+</header>
+
+<script>
+    var y=document.getElementById("menu")
+    console.log(y);
+    document.getElementById("barx").style.left="-100%";
+    function open_menu()
+    {
+        y.style.left="0%";
+        document.getElementById("bar").style.left="-100%";
+        document.getElementById("barx").style.left="0%";
+    }
+
+    function close_menu()
+    {
+        y.style.left="-100%";
+        document.getElementById("bar").style.left="0%";
+        document.getElementById("barx").style.left="-100%";
+    }
+</script>
+<!-- slider -->
+<!-- <section class="slider" id="slider">
+    <div class="slider1" id="slider1"><img src="/assests/sport-shoes-banner.jpg" alt=""></div>
+    <div class="slider2" id="slider2"><img src="/assests/advertising.jpg" alt=""></div>
+    <div class="slider3"><img src="/assests/new-collection-shoes.jpg" alt=""></div>
+    <div class="slider4"><img src="/assests/shoe-sale-banner-vector.jpg" alt=""></div>
+    <div class="slider5"><img src="/assests/sport-shoes.jpg" alt=""></div>
+</section> -->
+<!-- <section class="bullet">
+    <input type="radio" name="n1" onclick="slider1()">
+    <input type="radio" name="n1" onclick="slider2()">
+    <input type="radio" name="n1" onclick="slider3()">
+    <input type="radio" name="n1" onclick="slider4()">
+    <input type="radio" name="n1" onclick="slider5()">
+
+</section> -->
+
+<!--  javascript for slider -->
+<!-- <script>
+    var x=document.getElementById("slider")
+    console.log(x)
+    function slider1()
+    {
+        x.style.left="0%"
+    }
+
+    function slider2()
+    {
+        x.style.left="-100%"
+    }
+    
+    function slider3()
+    {
+        x.style.left="-200%"
+    }
+    
+    function slider4()
+    {
+        x.style.left="-300%"
+    }
+    
+    function slider5()
+    {
+        x.style.left="-400%"
+    }
+</script> -->
+
+<!-- home section start -->
+<section class="home">
+    <div class="card-outer">
+        <div class="product">
+            <img src="/assests/sneakers/VIBGYOR-6G-829-YAN-GOLDEN_2.webp" alt="shoes">
+        </div>
+        <h4>VIBGYOR Tan Men's Sneakers</h4>
+        <h4><ins>1,251 Rs.</ins> <del> 1,399 Rs.</del></h4>
+        <button class="button1"><strong>Add to cart</strong></button>
+        <button class="button2"><strong>Buy Now</strong></button>
+    </div>
+    
+    <div class="card-outer">
+        <div class="product">
+            <img src="/assests/sneakers/OG-D4_WHT-BLK_2.webp" alt="shoes">
+        </div>
+        <h4>OG-D4 White Men's Sneakers</h4>
+        <h4><ins>680 Rs.</ins> <del> 1,399 Rs.</del></h4>
+        <button class="button1"><strong>Add to cart</strong></button>
+        <button class="button2"><strong>Buy Now</strong></button>
+    </div>
+    
+    <div class="card-outer">
+        <div class="product">
+            <img src="/assests/sneakers/5G-627-BLK_2_848900b2-c460-4cb3-ad74-4a7b71d0b4a1.webp" alt="shoes">
+        </div>
+        <h4>CITY-RIDE Black Men's Sneakers</h4>
+        <h4><ins>955 Rs.</ins> <del> 1,699 Rs.</del></h4>
+        <button class="button1"><strong>Add to cart</strong></button>
+        <button class="button2"><strong>Buy Now</strong></button>
+    </div>
+    
+    <div class="card-outer">
+        <div class="product">
+            <img src="/assests/sneakers/5G-820-G-BLK-BEIGE-2.webp" alt="men shoes">
+        </div>
+        <h4>RENEGADE Black Men's Sneakers</h4>
+        <h4><ins>1,555 Rs.</ins> <del> 2,199 Rs.</del></h4>
+        <button class="button1"><strong>Add to cart</strong></button>
+        <button class="button2"><strong>Buy Now</strong></button>
+    </div>
+    
+    <div class="card-outer">
+        <div class="product">
+            <img src="/assests/sneakers/puma-black-active-red-original.webp" alt="men shoes">
+        </div>
+        <h4>Exotek NITRO Energy Sneakers For Men(Black)</h4>
+        <h4><ins>9,099 Rs.</ins> <del> 12,999 Rs.</del></h4>
+        <button class="button1"><strong>Add to cart</strong></button>
+        <button class="button2"><strong>Buy Now</strong></button>
+    </div>
+    
+    <div class="card-outer">
+        <div class="product">
+            <img src="/assests/sneakers/adidas-pulblu-black-white-impyel-original.webp" alt="men shoes">
+        </div>
+        <h4>Streetwise Sneakers For Men(Blue)</h4>
+        <h4><ins>2,147 Rs.</ins> <del> 5,999 Rs.</del> <span> 61% off</span></h4>
+        <button class="button1"><strong>Add to cart</strong></button>
+        <button class="button2"><strong>Buy Now</strong></button>
+    </div>
+
+    <div class="card-outer">
+        <div class="product">
+            <img src="/assests/sneakers/imapct-3-sneakers-nike.webp" alt="men shoes">
+        </div>
+        <h4>Impact 3 Sneakers For Men(Black)</h4>
+        <h4><ins>3,278 Rs.</ins> <del> 8,195 Rs.</del><span> 60% off</span></h4>
+        <button class="button1"><strong>Add to cart</strong></button>
+        <button class="button2"><strong>Buy Now</strong></button>
+    </div>
+    
+    <div class="card-outer">
+        <div class="product">
+            <img src="/assests/sneakers/asics-white-shamrock-green-original.webp" alt="men shoes">
+        </div>
+        <h4>EX89 Sneakers For Men (Green, White)</h4>
+        <h4><ins>9,989 Rs.</ins> <del> 9,999 Rs.</del></h4>
+        <button class="button1"><strong>Add to cart</strong></button>
+        <button class="button2"><strong>Buy Now</strong></button>
+    </div>
+    
+    <div class="card-outer">
+        <div class="product">
+            <img src="/assests/sneakers/adidas-cblack-stone-drkroy-original.webp" alt="men shoes">
+        </div>
+        <h4>Runavtaar M Running Shoes For Men(Black)</h4>
+        <h4><ins>4,299 Rs.</ins></h4>
+        <button class="button1"><strong>Add to cart</strong></button>
+        <button class="button2"><strong>Buy Now</strong></button>
+    </div>
+    
+    <div class="card-outer">
+        <div class="product">
+            <img src="/assests/sneakers/-original-.webp" alt="men shoes">
+        </div>
+        <h4>SoleMatch Control M Tennis(Black)</h4>
+        <h4><ins>6,119 Rs.</ins> <del> 11,999 Rs.</del><span>49% off</span></h4>
+        <button class="button1"><strong>Add to cart</strong></button>
+        <button class="button2"><strong>Buy Now</strong></button>
+    </div>
+
+    <div class="card-outer">
+        <div class="product">
+            <img src="/assests/Men/ABACUS_6G.jpg" alt="shoes">
+        </div>
+        <h4>ABACUS Grey Men's Running Shoes</h4>
+        <h4><ins>1,099.00 Rs.</ins> <del> 2,299.00 Rs.</del> <span>Save 53%</span></h4>
+        <button class="button1"><strong>Add to cart</strong></button>
+        <button class="button2"><strong>Buy Now</strong></button>
+    </div>
+    
+    <div class="card-outer">
+        <div class="product">
+            <img src="/assests/Men/OG-21.webp" alt="shoes">
+        </div>
+        <h4>OG-21 White Men's Sneakers</h4>
+        <h4><ins>1999.00 Rs.</ins></h4>
+        <button class="button1"><strong>Add to cart</strong></button>
+        <button class="button2"><strong>Buy Now</strong></button>
+    </div>
+    
+    <div class="card-outer">
+        <div class="product">
+            <img src="/assests/Men/MARVRICK_WHT.webp" alt="shoes">
+        </div>
+        <h4>MARVRICK White Men's Running Shoes</h4>
+        <h4><ins>1,379.00 Rs.</ins> <del> 1,999.00 Rs.</del></h4>
+        <button class="button1"><strong>Add to cart</strong></button>
+        <button class="button2"><strong>Buy Now</strong></button>
+    </div>
+    
+    <div class="card-outer">
+        <div class="product">
+            <img src="/assests/Men/XAVEN_NAVY-red.webp" alt="men shoes">
+        </div>
+        <h4>XAVEN Navy Men's Running Shoes</h4>
+        <h4><ins>1,379.00 Rs.</ins> <del> 1,999.00 Rs.</del></h4>
+        <button class="button1"><strong>Add to cart</strong></button>
+        <button class="button2"><strong>Buy Now</strong></button>
+    </div>
+    
+    <div class="card-outer">
+        <div class="product">
+            <img src="/assests/Men/WENDIGO_22G.webp" alt="men shoes">
+        </div>
+        <h4>WENDIGO Navy Men's Running Shoes</h4>
+        <h4><ins>1,029 Rs.</ins> <del> 1,399 Rs.</del></h4>
+        <button class="button1"><strong>Add to cart</strong></button>
+        <button class="button2"><strong>Buy Now</strong></button>
+    </div>
+    
+    <div class="card-outer">
+        <div class="product">
+            <img src="/assests/Men/SUMMIT_NAVY.webp" alt="men shoes">
+        </div>
+        <h4>SUMMIT Black Men's Running Shoes</h4>
+        <h4><ins>1,799 Rs.</ins> <del> 2,599 Rs.</del> <span>Save 31% </span></h4>
+        <button class="button1"><strong>Add to cart</strong></button>
+        <button class="button2"><strong>Buy Now</strong></button>
+    </div>
+
+    <div class="card-outer">
+        <div class="product">
+            <img src="/assests/Men/OG-22_WHT-RED_2.webp" alt="men shoes">
+        </div>
+        <h4>OG-22 White Men's Sneakers</h4>
+        <h4><ins>1,729 Rs.</ins> <del> 2,499 Rs.</del><span> 31% off</span></h4>
+        <button class="button1"><strong>Add to cart</strong></button>
+        <button class="button2"><strong>Buy Now</strong></button>
+    </div>
+    
+    <div class="card-outer">
+        <div class="product">
+            <img src="/assests/Men/OG-24_BLK-GOLDEN_2.webp" alt="men shoes">
+        </div>
+        <h4>OG-24 Black Men's Sneakers</h4>
+        <h4><ins>1,589 Rs.</ins> <del> 2,299 Rs.</del></h4>
+        <button class="button1"><strong>Add to cart</strong></button>
+        <button class="button2"><strong>Buy Now</strong></button>
+    </div>
+    
+    <div class="card-outer">
+        <div class="product">
+            <img src="/assests/Men/OG-26_WHT-D.GRN_2.webp" alt="men shoes">
+        </div>
+        <h4>OG-26 White Men's Sneakers</h4>
+        <h4><ins>1,689 Rs.</ins> <del> 2,399 Rs.</del><span>Save 31%</span></h4>
+        <button class="button1"><strong>Add to cart</strong></button>
+        <button class="button2"><strong>Buy Now</strong></button>
+    </div>
+
+    <div class="card-outer">
+        <div class="product">
+            <img src="/assests/Women/BEETLE_22L-933_BLK-PINK_2.webp" alt="shoes">
+        </div>
+        <h4>ABACUS Grey Men's Running Shoes</h4>
+        <h4><ins>1,099.00 Rs.</ins> <del> 2,299.00 Rs.</del> <span>Save 53%</span></h4>
+        <button class="button1"><strong>Add to cart</strong></button>
+        <button class="button2"><strong>Buy Now</strong></button>
+    </div>
+    
+    <div class="card-outer">
+        <div class="product">
+            <img src="/assests/Women/BLISS_22G-796_MAUVE-B.PINK_3.webp" alt="shoes">
+        </div>
+        <h4>OG-21 White Men's Sneakers</h4>
+        <h4><ins>1999.00 Rs.</ins></h4>
+        <button class="button1"><strong>Add to cart</strong></button>
+        <button class="button2"><strong>Buy Now</strong></button>
+    </div>
+    
+    <div class="card-outer">
+        <div class="product">
+            <img src="/assests/Women/KURSTIN_D.PURPLE-S.GRN_2.webp" alt="shoes">
+        </div>
+        <h4>MARVRICK White Men's Running Shoes</h4>
+        <h4><ins>1,379.00 Rs.</ins> <del> 1,999.00 Rs.</del></h4>
+        <button class="button1"><strong>Add to cart</strong></button>
+        <button class="button2"><strong>Buy Now</strong></button>
+    </div>
+    
+    <div class="card-outer">
+        <div class="product">
+            <img src="/assests/Women/OG-L10_WHT-RANI_2.webp" alt="men shoes">
+        </div>
+        <h4>XAVEN Navy Men's Running Shoes</h4>
+        <h4><ins>1,379.00 Rs.</ins> <del> 1,999.00 Rs.</del></h4>
+        <button class="button1"><strong>Add to cart</strong></button>
+        <button class="button2"><strong>Buy Now</strong></button>
+    </div>
+    
+    <div class="card-outer">
+        <div class="product">
+            <img src="/assests/Women/RAYE_NAVY-RANI_2.webp" alt="men shoes">
+        </div>
+        <h4>WENDIGO Navy Men's Running Shoes</h4>
+        <h4><ins>1,029 Rs.</ins> <del> 1,399 Rs.</del></h4>
+        <button class="button1"><strong>Add to cart</strong></button>
+        <button class="button2"><strong>Buy Now</strong></button>
+    </div>
+    
+    <div class="card-outer">
+        <div class="product">
+            <img src="/assests/Women/SIREN_NAVY-PINK_2.webp" alt="men shoes">
+        </div>
+        <h4>SUMMIT Black Men's Running Shoes</h4>
+        <h4><ins>1,799 Rs.</ins> <del> 2,599 Rs.</del> <span>Save 31% </span></h4>
+        <button class="button1"><strong>Add to cart</strong></button>
+        <button class="button2"><strong>Buy Now</strong></button>
+    </div>
+    
+
+</section>
+
+<!-- HOME SECTION END  --> 
+<!--  FOOTER START -->
+<footer>
+    <div class="footer-top">
+        <div class="logo">
+            <img src="/assests/Whiltor.png" alt="">
+        </div>
+        <div class="social">
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="shop">
+            <h3>Shop at Whiltor</h3>
+        </div>
+    </div>
+    <div class="footer-down">
+        <div class="foot1">
+            <h3>What's In Store</h3><br>
+            <p><a href="">Men</a></p>
+            <p><a href="">Women</a></p>
+            <p><a href="">Kids</a></p>
+            <p><a href="">Exclusive</a></p>
+            <p><a href="">Track Order</a></p>
+
+
+        </div>
+        <div class="foot2">
+            <h3>CUSTOMER CARE </h3><br>
+            <p>For Online Orders </p>
+            <p><strong>Inquiry/Complaint: </strong></p>
+            <p>7489220162</p>
+            <p><strong>Any Other queries:</strong><br></p>
+            <p>6266975037</p>
+            <p><strong>Email:</strong><a href="">devrajmewada04@gamil.com</a></p>
+            <p><strong>Email:</strong><a href="">customercare@gamil.com</a></p>   
+        </div>
+        
+        <div class="foot3">
+            <h3>Company Info & Policies</h3><br>
+            <p><a href="">Blogs</a></p>
+            <p><a href="">Corporate</a></p>
+            <p><a href="">Terms & Conditions</a></p>
+            <p><a href="">Privacy & Cookies Policy</a></p>
+            <p><a href="">FAQ's</a></p>
+            <!-- <p><a href="">Return & Claim Policy</a></p> -->
+            <p><a href="">Contact Us</a></p>
+            <p><a href="">Return/Exchange</a></p>           
+        </div>
+        <div class="foot4">
+            <h3>Newsletters</h3><br>
+            <p>Sign up for exclusive offers, original stories, upcoming events and more.</p>
+            <br>
+            <form action="">
+                <input type="text" placeholder="Enter email">
+                <br><br>
+                <button>Sign up</button>
+            </form>
+        </div>
+    </div>
+
+
+</footer>
+</body>
+</html>

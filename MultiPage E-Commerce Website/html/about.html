@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>classy Shoes</title>
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/mediaqu.css">
+    <link rel="stylesheet" href="/style/about.css">
+    <link rel="icon" href="/assests/favicon.jpg">
+    <script src="https://kit.fontawesome.com/19996fca95.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- HEADER START -->
+<header>
+    <!-- FIRST NAVE START -->
+    <nav class="first-nav">
+        <div class="logo">
+            <img src="/assests/Whiltor.png" alt="">
+        </div>
+            <div class="searchbar">
+                <form action="">
+                    <input type="search" placeholder="search here"> 
+                    <a href=""><i class="fa-solid fa-magnifying-glass"></i> </a>
+                </form>
+            </div>
+        <div class="menu" id="menu">
+            <a href="index.html">home</a>
+            <a href="about.html">About</a>
+            <select name="links" id="" class="sel" onchange="window.location.href=this.value;">
+                <option value="">Products</option>
+                <option value="/html/men.html">MEN</option>
+                <option value="/html/women.html">WOMEN</option>
+                <option value="/html/kids.html">KIDS</option>
+                <option value="/html/collection.html">COLLECTIONS</option>
+            </select>
+            <a class="get-started" href="login.html">Login/sign up</a>
+        </div>
+        <div class="bar" >
+            <i class="fa-solid fa-bars" id="bar" onclick="open_menu()"></i>
+            <i class="fa-solid fa-xmark" class="barx" id="barx" onclick="close_menu()"></i>
+        </div>
+    </nav>
+    <!-- SECOND NAV START -->
+    <nav class="second-nav">
+        <a href="men.html">MEN</a>
+        <a href="women.html">WOMEN</a>
+        <a href="kids.html">KIDS</a>
+        <a href="collection.html">COLLECTIONS</a>
+        <a href="index.html">SALE</a>
+        <a href="index.html">SLIPPERS & SANDALS</a>
+        <a href="collection.html">EXCLUSIVE</a>
+    </nav>
+</header>
+
+<script>
+    var y=document.getElementById("menu")
+    console.log(y);
+    document.getElementById("barx").style.left="-100%";
+    function open_menu()
+    {
+        y.style.left="0%";
+        document.getElementById("bar").style.left="-100%";
+        document.getElementById("barx").style.left="0%";
+    }
+
+    function close_menu()
+    {
+        y.style.left="-100%";
+        document.getElementById("bar").style.left="0%";
+        document.getElementById("barx").style.left="-100%";
+    }
+</script>
+
+    <!-- ABOUT SECTION START -->
+
+<section>
+    <div class="imgae">
+        <img src="/assests/about/header-puma.webp" alt="image">
+    </div>
+<div class="ab">
+    <p><strong>WHEN YOU’RE FAST, YOU SET THE PACE. THE GAME MOVES SLOWER. THE BALL 
+        LOOKS BIGGER. THIS IS HOW THE GREATS CHANGE THE GAME. THIS IS HOW THEY WIN. PUMA
+         INVITES YOU TO BREAK THROUGH YOUR LIMITS, UNLOCK TRANSCENDENT ATHLETIC PERFORMANCE,
+          AND SEE THE GAME LIKE WE DO: FOREVER. FASTER. </strong></p>
+</div>
+<br>
+<div class="ab">
+    <h1>Shoes That Have It All</h1>
+    <p><strong>Our shoes are contemporary, sturdy and strong. Made from the finest quality leather and immaculately
+        crafted by artisans, they exude a class of their own.For everyday use or for special occasion, 
+        <span style="color: blue;"><a href="index.html">Classy Shoes</a></span> has a wide range to offer for one and all.</strong></p>
+    </div>
+</section>
+<!--  FOOTER START -->
+<footer>
+    <div class="footer-top">
+        <div class="logo">
+            <img src="/assests/Whiltor.png" alt="">
+        </div>
+        <div class="social">
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="shop">
+            <h3>Shop at Whiltor</h3>
+        </div>
+    </div>
+    <div class="footer-down">
+        <div class="foot1">
+            <h3>What's In Store</h3><br>
+            <p><a href="">Men</a></p>
+            <p><a href="">Women</a></p>
+            <p><a href="">Kids</a></p>
+            <p><a href="">Exclusive</a></p>
+            <p><a href="">Track Order</a></p>
+
+
+        </div>
+        <div class="foot2">
+            <h3>CUSTOMER CARE </h3><br>
+            <p>For Online Orders </p>
+            <p><strong>Inquiry/Complaint: </strong></p>
+            <p>7489220162</p>
+            <p><strong>Any Other queries:</strong><br></p>
+            <p>6266975037</p>
+            <p><strong>Email:</strong><a href="">devrajmewada04@gamil.com</a></p>
+            <p><strong>Email:</strong><a href="">customercare@gamil.com</a></p>   
+        </div>
+        
+        <div class="foot3">
+            <h3>Company Info & Policies</h3><br>
+            <p><a href="">Blogs</a></p>
+            <p><a href="">Corporate</a></p>
+            <p><a href="">Terms & Conditions</a></p>
+            <p><a href="">Privacy & Cookies Policy</a></p>
+            <p><a href="">FAQ's</a></p>
+            <!-- <p><a href="">Return & Claim Policy</a></p> -->
+            <p><a href="">Contact Us</a></p>
+            <p><a href="">Return/Exchange</a></p>           
+        </div>
+        <div class="foot4">
+            <h3>Newsletters</h3><br>
+            <p>Sign up for exclusive offers, original stories, upcoming events and more.</p>
+            <br>
+            <form action="">
+                <input type="text" placeholder="Enter email">
+                <br><br>
+                <button>Sign up</button>
+            </form>
+        </div>
+    </div>
+
+
+</footer>
+</body>
+</html>
