@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Comaptible" content="IE=edge">
+	<title>LevelUp Carrier</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="reponsive.css">
+	<link rel="icon" type="png" href="./images/icon/logo3.jpeg">
+	<script src="https://kit.fontawesome.com/19996fca95.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+	<!-- HEADER START  -->
+	<header>
+		<nav>
+			<div class="logo"><img src="images/icon/logo.jpeg" alt="logo"></div>
+			<ul class="menu" id="menu">
+				<li><a class="active" href="index.html">Home</a></li>
+				<li><a href="#course_section">course</a></li>
+				<li><a href="#about_section">About</a></li>
+				<li><a href="#team_section">Team</a></li>
+				<li><a href="#services_section">Services</a></li>
+				<li><a href="#contactus_section">Contact</a></li>
+			</ul>
+			<div class="srch"><input type="text" class="search" placeholder="Search here..."><i
+					class="fa fa-magnifying-glass"></i></div>
+			<a class="get-started" href="login.html">Login/sign up</a>
+			<div class="bar" >
+				<i class="fa-solid fa-bars" id="bar" onclick="open_menu()"></i>
+				<i class="fa-solid fa-xmark" class="barx" id="barx" onclick="close_menu()"></i>
+			</div>
+		</nav>
+		
+	</header>
+
+	<script>
+		var y=document.getElementById("menu")
+		console.log(y);
+		document.getElementById("barx").style.left="-100%";
+		function open_menu()
+		{
+			y.style.left="0%";
+			document.getElementById("bar").style.left="-100%";
+			document.getElementById("barx").style.left="0%";
+		}
+	
+		function close_menu()
+		{
+			y.style.left="-100%";
+			document.getElementById("bar").style.left="0%";
+			document.getElementById("barx").style.left="-100%";
+		}
+	</script>
+
+	
+	<!--  header end here -->
+	<!--  section part start -->
+	<section class="head-container">
+		<div class="quote">
+			<h4 class="about_title"> Hello Learners</h4>
+			<p>The beautiful thing about learning is that nobody can take it away from you</p>
+			<h5>Education is the process of facilitating learning, or the acquisition of knowledge, skills, values,
+				beliefs, and habits. Educational methods include teaching, training, storytelling, discussion and
+				directed research!</h5>
+			<div class="play">
+				<img src="images/icon/play.png" alt="play"><span><a href="#" target="_blank">Watch Now</a></span>
+			</div>
+		</div>
+		<div class="svg-image">
+			<img src="images/extra/home-img.png" alt="svg">
+		</div>
+	</section>
+
+
+
+	<!-- Some Popular Subjects -->
+	<section class="course" id="course_section">
+		<div class="title">
+			<span>Popular Subjects on Our platform </span>
+		</div>
+		<div class="cbox">
+			<div class="det"><a href="#"><img src="images/courses/book.png">JEE Preparation</a></div>
+			<div class="det"><a href="#"><img src="images/courses/d1.png">GATE Preparation</a></div>
+			<div class="det"><a href="#"><img src="images/courses/paper.png">Sample Papers</a></div>
+			<div class="det"><a href="#"><img src="images/courses/d1.png">Daily Quiz</a></div>
+			<div class="det"><a href="#"><img src="images/courses/computer.png">Computer Courses</a></div>
+			<div class="det"><a href="#"><img src="images/courses/data.png">Data Structures</a></div>
+			<div class="det"><a href="#"><img src="images/courses/algo.png">Algorithm</a></div>
+		</div>
+
+	</section>
+
+	<!-- ABOUT  -->
+
+	<section class="about_section" id="about_section">
+		<p class="about"><span>About</span></p>
+		<div class="about-content">
+			<div class="side-image">
+				<img class="sideImage" src="images/extra/e3.jpg">
+			</div>
+			<div class="side-text">
+				<h2>What you think about us ?</h2>
+				<p>Education is the process of facilitating learning, or the acquisition of knowledge, skills, values,
+					beliefs, and habits. Educational methods include teaching, training, storytelling, discussion and
+					directed research.<br> Educational website can include websites that have games, videos or topic
+					related resources that act as tools to enhance learning and supplement classroom teaching. These
+					websites help make the process of learning entertaining and attractive to the student, especially in
+					today's age. <br>Using HTML(HyperText Markup Language), CSS(Cascading Style Sheet), JavaScript, we
+					can make learning more easier and in a interesting way.</p>
+			</div>
+		</div>
+	</section>
+	<!-- TEAM -->
+	<section class="team" id="team_section">
+		<p class="teammate"> We're the Creators</p>
+		<div class="totalcard">
+			<div class="card">
+				<img src="images/creator/02.jpg">
+				<div class="card-title">Devraj Mewada</div>
+				<div id="detail">
+					<p>“ You can teach a student a lesson for a day; but if you can teach him to learn by creating
+						curiosity, he will continue the learning process as long as he lives “</p>
+					<a href="https://www.linkedin.com/in/devraj-mewada" target="_blank"><button
+							class="btn-creator1">Follow +</button></a>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- SERVICES -->
+	<section class="services_section" id="services_section">
+		<p><span>Services </span></p>
+		<div class="service-swipe">
+			<a href="#">
+				<div class="s-card"><img src="images/icon/computer-courses.png">
+					<p>Free Online Computer Courses</p>
+				</div>
+			</a>
+			<a href="#">
+				<div class="s-card"><img src="images/icon/brainbooster.png">
+					<p>Building Concepts for Competitive Exams</p>
+				</div>
+			</a>
+			<a href="#">
+				<div class="s-card"><img src="images/icon/online-tutorials.png">
+					<p>Online Video Lectures</p>
+				</div>
+			</a>
+			<a href="#">
+				<div class="s-card"><img src="images/icon/papers.jpg">
+					<p>Sample Papers of Various Competitive Exams</p>
+				</div>
+			</a>
+			<a href="#">
+				<div class="s-card"><img src="images/icon/p3.png">
+					<p>Performance and Ranking Report</p>
+				</div>
+			</a>
+			<a href="#contactus_section">
+				<div class="s-card"><img src="images/icon/discussion.png">
+					<p>Discussion with Our Tutors & Mentors</p>
+				</div>
+			</a>
+			<a href="#">
+				<div class="s-card"><img src="images/icon/q1.png">
+					<p>Daily Brain Teasing Questions to Improve IQ</p>
+				</div>
+			</a>
+			<a href="#contactus_section">
+				<div class="s-card"><img src="images/icon/help.png">
+					<p>24x7 Online Support</p>
+				</div>
+			</a>
+		</div>
+
+	</section>
+
+
+
+	<!-- FOOTER -->
+	<footer>
+		<div class="footer-container" id="contactus_section">
+			<div class="left-col">
+				<div class="logo"> <img src="images/icon/logo1.png" ></div>
+				<div class="social-media">
+					<a href="#"><img src="images/icon/fb.png"></a>
+					<a href="#"><img src="images/icon/insta.png"></a>
+					<a href="#"><img src="images/icon/tt.png"></a>
+					<a href="#"><img src="images/icon/ytube.png"></a>
+					<a href="#"><img src="images/icon/linkedin.png"></a>
+
+				</div><br>
+				<p class="rights-text">Copyright © 2024 Created By LevelUp Carrier.com , All Rights Reserved.</p>
+				
+				<p><img src="images/icon/location.png"> SATI COLLEGE<br>GRCC+F7R, Civil Lines, Vidisha, Madhya Pradesh
+					464001</p>
+				<p><img src="images/icon/phone.png"> +91-1234-567-890<br><img
+						src="images/icon/mail.png">&nbsp;levelupcarrier@gmail.com</p>
+			</div>
+			<div class="right-col">
+				<h1 style="color: #fff">Our Newsletter</h1>
+				<div class="border"></div><br>
+				<p>Enter Your Email to get our News and updates.</p>
+				<form class="newsletter-form">
+					<input class="txtb" type="email" placeholder="Enter Your Email">
+					<input class="btn" type="submit" value="Submit">
+				</form>
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+</html>
