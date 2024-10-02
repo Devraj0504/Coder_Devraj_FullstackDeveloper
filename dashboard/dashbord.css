@@ -1,0 +1,453 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    background-color: rgb(204, 208, 215);
+}
+/* section{
+    position: relative;
+    display: flex;
+} */
+/*  HEADER CSS START */
+header .menu{
+    width: 100%;
+    height: 12vh;
+    border-bottom: 2px solid black;
+    position: fixed;
+    z-index: 1;
+    background-color: rgb(55,72,90);
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+header .menu .bname{
+    width: 15%;
+    height: 10vh;
+    color: antiquewhite;
+}
+header .menu .bname span{
+    font-weight: bolder;
+    font-size: 200%;
+    padding: 10%;
+    border-bottom: 4px solid antiquewhite;
+    border-radius: 15px;
+}
+header .menu .searchbar {
+    background-color: white;
+    padding: 4px;
+    border-radius: 20px;
+    width: 30%;
+}
+header .menu  .searchbar i{  
+    margin-left: 6%;
+}
+
+header .menu  .searchbar form input{
+    border: none;
+    outline: none;
+    width: 85%;
+}
+header .menu .imglogo{
+    width: 10%;
+    height: 80%;
+}
+header .menu .imglogo img{
+    width: 60%;
+    height: 100%;
+    border-radius: 50%;
+}
+/*  BODY CSS START */
+section {
+    display: flex;
+    width: 100%;
+    /* position: absolute; */
+}
+
+/*  ASIDE MENU  */
+aside{
+    width: 25%;
+    height: 88vh;
+    background-color: rgb(87, 110, 134);
+    position: fixed;
+    top: 12vh;
+    /* color: whitesmoke; */
+}
+aside .bar{
+    position: absolute;
+    left: 80%;  
+    font-size: xx-large;
+}
+aside .bar i{
+    cursor: pointer;
+    position: absolute;
+
+}
+aside ul li{
+    
+    list-style: none;
+    /* font-size: 24px; */
+    padding: 10px;
+    border-bottom: 4px solid black;
+    border-radius: 15px;
+    /* align-content: center; */
+}
+aside ul li:last-child {
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+}
+aside ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+}
+aside ul li a h4{
+    padding: 5%;
+}
+aside ul li:hover{
+    color: #fff;
+    padding: 20px;
+    background-color: rgb(169, 216, 216);
+}
+aside ul li a:hover{
+    text-decoration: none;
+    color: red;
+}
+
+/* ASIDE CSS END */
+
+/* MAIN CSS START */
+.main{
+    width: 75%;
+    position: absolute;
+    top: 15vh;
+    left: 25%;
+}
+
+.profile{
+    width: 75%;
+    position: absolute;
+    top: 12vh;
+    left: 25%;
+}
+.profile img{
+    width: 100%;
+    height: 80vh;
+    border-radius: 5px;
+}
+.profile .btn {
+   position: relative;
+   left: 50%;
+}
+.profile .btn button{
+    background-color: #fff;
+   padding: 5px;
+   border-radius: 10px;
+   cursor: pointer;
+}
+.profile .btn button:first-child{
+    background-color: cornflowerblue;
+    color: #fff;
+}
+
+/* .main .portfoliotracker{
+    display: none;
+} */
+.main .commonDiv{
+    display: inline-flex;
+    width: 100%;
+}
+.main .commonDiv .columnDiv {
+    text-align: center;
+    align-content: center;
+    margin: 7px 15px 7px 7px;
+    width: 100%;
+}
+
+
+.main .commonDiv .columnDiv .upperDiv {
+    height: auto;
+    background-color:#F4F5F7;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, .25);
+    /* font-size: ; */
+    font-weight: bolder;
+}
+
+.main .commonDiv .columnDiv .lowerDiv {
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .25);
+    /* font-size: 2rem; */
+    font-weight: bolder;
+    border: 5px solid #dfdfdf;
+}
+.main table{
+    width: 100%;
+    height: auto;
+    box-shadow: 3px 4px 5px gray;
+}
+
+.main table tr{
+    padding: 1%;
+    background-color: azure;
+    text-align: center;
+
+}
+.main table th{
+    padding: 1%;
+
+}
+.main table td{
+    padding: 1%;
+    background-color: #F4F5F7;
+}
+
+
+/* chart    */
+.chart{
+    width: 100%;
+    height: auto;
+}
+.chart .main-content .price{
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    line-height: 2.5;
+    left: 5%;
+    z-index: 1;
+}
+.chart .outter1 .horizontal .share{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    gap: 7%;
+    z-index: 1;
+    bottom: -5%;
+    left: 10%;
+}
+
+
+.chart .outter1 .candel{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+.chart .outter1 .horizontal{
+    width: 90%;
+    height: 0px;
+    border: 1px solid black;
+    margin-top: 380px;
+    margin-left: 70px;
+}
+.vertical{
+    position: absolute;
+    width: 0%;
+    height: 86%;
+    border: 1px solid black;
+    margin: 52px 0px 0px 70px;
+   
+}
+
+.outter1{
+    height: 80%;
+    width: 100%;
+    background-color:#F4F5F7;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    position: relative;
+    margin: 18px;
+    /* margin-left :150px; */
+    border-radius: 10px;
+    box-shadow: 20px 20px 20px 20px gray;
+    
+}
+
+.outter1 .outter1-box1{
+    height: 85px;
+    width: 7%;
+    background-color: red;
+    margin-left: 100px;
+    margin-top: 295px;
+}
+.outter1 .outter1-box1:hover{
+    transform: translateX(10px);
+}
+.outter1 .outter1-box2{
+    height: 203px;
+    width: 7%;
+    background-color: green;
+    margin-left: 25px;
+    margin-top: 177px;
+
+}
+.outter1 .outter1-box3{
+    height: 290px;
+    width: 7%;
+    background-color: green;
+    margin-left: 25px;
+    margin-top: 90px;
+}
+.outter1 .outter1-box4{
+    height: 85px;
+    width: 7%;
+    background-color: green;
+    margin-left: 25px;
+    margin-top: 295px;
+}
+.outter1 .outter1-box5{
+    height: 220px;
+    width: 7%;
+    background-color: green;
+    margin-left: 25px;
+    margin-top :160px; 
+}
+
+.outter1 .outter1-box2:hover{
+    transform: translateX(10px);
+}
+.outter1 .outter1-box3:hover{
+    transform: translateX(10px);
+}
+.outter1 .outter1-box4:hover{
+    transform: translateX(10px);
+}
+.outter1 .outter1-box5:hover{
+    transform: translateX(10px);
+}
+/* .outter1 .outter1-box6:hover{
+    transform: translateX(10px);
+}
+.outter1 .outter1-box7:hover{
+    transform: translateX(10px);
+}
+.outter1 .outter1-box8:hover{
+    transform: translateX(10px);
+} */
+.main-content .outter1 a{
+    position: absolute;
+    z-index: 2;
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    font-weight: bolder;
+    right: 10px;
+}
+
+
+/* chart end */
+
+/*   MAIN BUY CSS START */
+.main-buy{
+    width: 75%;
+    position: absolute;
+    left: 25%;
+}
+
+.main-buy .upper{
+    width: 100%;
+    height: 20vh;
+    background-color: aquamarine;
+    text-align: center;
+    align-content: center;
+    position: relative;
+    top: 12vh;
+    /* padding: 20%; */
+}
+.main-buy .upper h3{
+    color: gray;
+    padding: 5px;
+}
+.boxes{
+    width: 100%;
+    flex-flow: wrap;
+    box-sizing: border-box;
+    display: flex;
+    place-content: center;
+    align-items: center;
+    position: relative;
+    top: 12vh;
+}
+.boxes .box{
+    height: auto;
+    width: 220px;
+    border-radius: 20px;
+    box-shadow: 3px 4px 6px gray;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 5%;
+    margin: 5%;
+}
+
+.boxes .box .up{
+    background-color: coral;
+    width: 80%;
+    position: relative;
+    left: 10%;
+    border-radius: 5px;
+}
+.boxes .box .package-type{
+    padding: 20px;
+}
+
+.boxes .box .package{
+    padding: 10px;
+    background-color: darkgray;
+    border-radius: 20px;
+}
+.boxes .box .package del{
+    opacity: 0.5;
+}
+.boxes .box .benefits p{
+    padding: 10px;
+    opacity: 0.6;
+}
+
+
+/* order css  */
+
+.supportMsg{
+    display: flex;
+    padding: 5%;
+}
+
+div.disclaimer{
+    padding: 10%;
+}
+div.disclaimer strong{
+    color: red;
+}
+/* media screen */
+
+@media (max-width:420px) {
+    /* body{
+        background-color: chartreuse;
+    } */
+    aside ul li a h4{
+        display: none;
+    }
+
+    .outter1{
+        height: 80%;
+        width: 100%;
+        background-color: aquamarine;
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        position: relative;
+        border-radius: 10px;
+        box-shadow: 20px 20px 20px gray;
+        
+    }
+    
+
+}
